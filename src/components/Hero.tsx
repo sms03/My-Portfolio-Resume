@@ -3,7 +3,7 @@ import { ArrowRight, Code, Palette, Monitor } from 'lucide-react';
 
 export const Hero = () => {
   const [animated, setAnimated] = useState(false);
-  const phrases = ['CGI and VFX Artist', '3D Motion Graphics Designer', 'Web App Developer'];
+  const phrases = ['CGI and VFX Artist', '3D Motion Graphics Designer', 'Web App Developer', 'AI Developer', 'Prompt Engineer'];
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
   const [displayText, setDisplayText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);

@@ -31,7 +31,7 @@ export const Footer = () => {
           <div className="w-full md:w-4/12 px-4 mb-6 md:mb-0">
             <h4 className="text-xl font-semibold mb-3 text-white">SMS.</h4>
             <p className="text-sm text-white/80 mb-3">
-            CGI-VFX Artist | Web Developer | AI Enthusiast
+            CGI-VFX Artist | 3D Motion Graphics Designer | Web Developer | AI Enthusiast
             </p>
             <div className="flex space-x-3">
               <a 
