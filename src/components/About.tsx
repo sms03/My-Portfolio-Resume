@@ -126,7 +126,7 @@ export const About = () => {
               </ul>
             </div>
             
-            <div className={`${inView ? 'animate-fadeIn animate-delay-400' : 'opacity-0'}`}>
+            {/*<div className={`${inView ? 'animate-fadeIn animate-delay-400' : 'opacity-0'}`}>
               <h3 className="subtitle">Languages</h3>
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-white/80 backdrop-blur-sm p-3 rounded-lg shadow-sm flex items-center">
@@ -142,7 +142,8 @@ export const About = () => {
                   <span>Japanese (Proficient)</span>
                 </div>
               </div>
-            </div>
+            </div> */}
+
           </div>
         </div>
       </div>

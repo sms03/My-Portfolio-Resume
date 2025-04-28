@@ -69,7 +69,7 @@ export const CustomCursor = () => {
     <>
       {/* Main larger cursor */}
       <div
-        className={`fixed pointer-events-none z-50 rounded-full bg-portfolio-pastel-pink/30 transition-transform duration-200 ${
+        className={`fixed pointer-events-none z-[9999] rounded-full bg-portfolio-pastel-pink/30 transition-transform duration-200 ${
           isHidden ? 'opacity-0' : 'opacity-100'
         } ${isClicked ? 'scale-75' : 'scale-100'}`}
         style={{
@@ -84,7 +84,7 @@ export const CustomCursor = () => {
       
       {/* Small dot cursor */}
       <div
-        className={`fixed pointer-events-none z-50 rounded-full bg-white border-2 border-portfolio-pastel-blue transition-opacity duration-200 ${
+        className={`fixed pointer-events-none z-[10000] rounded-full bg-white border-2 border-portfolio-pastel-blue transition-opacity duration-200 ${
           isHidden ? 'opacity-0' : 'opacity-100'
         }`}
         style={{

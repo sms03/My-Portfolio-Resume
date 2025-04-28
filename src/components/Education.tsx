@@ -138,7 +138,7 @@ export const Education = () => {
                   ))}
                 </div>
                 
-                <div className="mt-8 pt-6 border-t border-dashed border-gray-200">
+                {/*<div className="mt-8 pt-6 border-t border-dashed border-gray-200">
                   <h3 className="text-lg font-medium mb-3">Projects</h3>
                   <div className="bg-portfolio-pastel-cream/30 p-4 rounded-lg">
                     <div className="flex items-start">
@@ -154,7 +154,8 @@ export const Education = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div>*/}
+
               </div>
             </div>
           </div>
