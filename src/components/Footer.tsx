@@ -29,9 +29,9 @@ export const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-between items-center">
           <div className="w-full md:w-4/12 px-4 mb-6 md:mb-0">
-            <h4 className="text-xl font-semibold mb-3 text-white">Shivam M. Salunkhe</h4>
+            <h4 className="text-xl font-semibold mb-3 text-white">SMS.</h4>
             <p className="text-sm text-white/80 mb-3">
-              Passionate self-taught CG & VFX artist specializing in creating weird, futuristic, surreal, and abstract art.
+            CGI-VFX Artist | Web Developer | AI Enthusiast
             </p>
             <div className="flex space-x-3">
               <a 
@@ -81,7 +81,7 @@ export const Footer = () => {
         <div className="flex flex-wrap items-center md:justify-between justify-center">
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
             <div className="text-sm text-white/70">
-              © {new Date().getFullYear()} Designed with <Heart size={14} className="inline-block mx-1 text-portfolio-pastel-red animate-pulse" /> by Shivam M. Salunkhe
+              © {new Date().getFullYear()} Designed with <Heart size={14} className="inline-block mx-1 text-portfolio-pastel-red animate-pulse" /> by SMS.
             </div>
           </div>
         </div>
