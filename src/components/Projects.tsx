@@ -94,7 +94,7 @@ const inProgressProjects = [
     title: 'Portfolio Enhancement',
     description: 'Adding new features and improving design of my personal portfolio website.',
     technologies: ['React', 'TypeScript', 'Tailwind CSS'],
-    completion: 50,
+    completion: 90,
     startDate: 'April 2025',
     estimatedCompletion: 'May 2025',
     color: 'from-portfolio-pastel-blue to-portfolio-pastel-pink',
