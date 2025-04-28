@@ -94,8 +94,9 @@ export const Navbar = () => {
           <a 
             href="#home" 
             onClick={(e) => scrollToSection('home', e)}
-            className="text-xl font-bold gradient-text"
+            className="text-xl font-bold gradient-text flex items-center"
           >
+            <img src="/mylogo.png" alt="SMS Logo" className="h-6 w-auto mr-2" />
             SMS.
           </a>
           
@@ -183,9 +184,10 @@ export const Navbar = () => {
             <a 
               href="#home"
               onClick={(e) => scrollToSection('home', e)} 
-              className={`text-lg font-bold gradient-text transition-opacity duration-300 
+              className={`text-lg font-bold gradient-text flex items-center transition-opacity duration-300 
                 ${isVerticalExpanded ? 'opacity-100' : 'opacity-0'}`}
             >
+              <img src="/mylogo.png" alt="SMS Logo" className="h-5 w-auto mr-1.5" />
               SMS.
             </a>
             {/* Removed the old collapse button since we now have it on the outside */}
