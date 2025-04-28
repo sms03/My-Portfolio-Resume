@@ -3,7 +3,7 @@ import { ArrowRight, Code, Palette, Monitor } from 'lucide-react';
 
 export const Hero = () => {
   const [animated, setAnimated] = useState(false);
-  const phrases = ['CG & VFX Artist', '3D Cover Designer', 'UI Developer'];
+  const phrases = ['CGI and VFX Artist', '3D Motion Graphics Designer', 'Web App Developer'];
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
   const [displayText, setDisplayText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
@@ -84,7 +84,7 @@ export const Hero = () => {
             </div>
             
             <p className={`text-gray-700 text-base md:text-lg mb-8 max-w-2xl transform transition-all duration-700 delay-300 ${animated ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-              Passionate self-taught CG & VFX artist specializing in creating weird, futuristic, surreal, and abstract art. Skilled in transforming unique concepts into stunning visuals to ensure client satisfaction.
+              Highly skilled CGI and VFX Artist with additional expertise as an AI Developer, Prompt Engineer, and Web App Developer. Adept at combining cutting-edge technology with creative artistry to produce innovative solutions in digital media, web applications, and AI-driven projects.
             </p>
             
             <div className={`flex flex-wrap gap-4 justify-center md:justify-start transform transition-all duration-700 delay-500 ${animated ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
@@ -103,8 +103,8 @@ export const Hero = () => {
                 <Code size={24} className="text-portfolio-pastel-blue" />
               </div>
               <div>
-                <h3 className="font-medium mb-1">Coding in Python</h3>
-                <p className="text-sm text-gray-600">AI app development</p>
+                <h3 className="font-medium mb-1">AI Developer</h3>
+                <p className="text-sm text-gray-600">Prompt Engineering</p>
               </div>
             </div>
             
@@ -114,7 +114,7 @@ export const Hero = () => {
               </div>
               <div>
                 <h3 className="font-medium mb-1">3D Designer</h3>
-                <p className="text-sm text-gray-600">Math-based modeling</p>
+                <p className="text-sm text-gray-600">Motion Graphics</p>
               </div>
             </div>
             
@@ -123,22 +123,12 @@ export const Hero = () => {
                 <Monitor size={24} className="text-portfolio-pastel-purple" />
               </div>
               <div>
-                <h3 className="font-medium mb-1">Creative Artist</h3>
-                <p className="text-sm text-gray-600">Surreal & abstract art</p>
+                <h3 className="font-medium mb-1">Web Developer</h3>
+                <p className="text-sm text-gray-600">Modern Applications</p>
               </div>
             </div>
           </div>
         </div>
-        
-        {/* Scroll indicator - moved even further down by changing bottom-5 to bottom-0 */}
-        {/* 
-        <div className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 flex flex-col items-center transition-all duration-1000 ${animated ? 'opacity-70' : 'opacity-0'}`}>
-          <span className="text-sm mb-1">Scroll Down</span>
-          <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
-            <div className="w-1.5 h-3 bg-gray-400 rounded-full animate-bounce mt-2"></div>
-          </div>
-        </div>
-        */}
       </div>
     </section>
   );

@@ -10,17 +10,17 @@ export const Skills = () => {
 
   // Technical skills data
   const technicalSkills = [
-    { name: 'Coding in Python', level: 85, icon: <Code size={18} />, color: 'from-portfolio-pastel-blue to-portfolio-pastel-purple' },
-    { name: 'AI app development', level: 75, icon: <Settings size={18} />, color: 'from-portfolio-pastel-pink to-portfolio-pastel-red' },
-    { name: '3D based on Math and Coding', level: 90, icon: <Box size={18} />, color: 'from-portfolio-pastel-green to-portfolio-pastel-blue' },
+    { name: 'Programming Languages', level: 85, icon: <Code size={18} />, color: 'from-portfolio-pastel-blue to-portfolio-pastel-purple' },
+    { name: 'Web Development', level: 80, icon: <Settings size={18} />, color: 'from-portfolio-pastel-pink to-portfolio-pastel-red' },
+    { name: '3D & Motion Graphics', level: 90, icon: <Box size={18} />, color: 'from-portfolio-pastel-green to-portfolio-pastel-blue' },
   ];
 
   // Software skills data
   const softwareSkills = [
     { name: '3D Software', icon: <Box size={24} />, color: 'bg-portfolio-pastel-blue/20', textColor: 'text-portfolio-pastel-blue' },
-    { name: 'Simulation Software', icon: <Layers size={24} />, color: 'bg-portfolio-pastel-pink/20', textColor: 'text-portfolio-pastel-pink' },
-    { name: 'Editing and Grading Software', icon: <Brush size={24} />, color: 'bg-portfolio-pastel-purple/20', textColor: 'text-portfolio-pastel-purple' },
-    { name: 'Programming tools', icon: <Code size={24} />, color: 'bg-portfolio-pastel-green/20', textColor: 'text-portfolio-pastel-green' },
+    { name: 'Prompt Engineering', icon: <Layers size={24} />, color: 'bg-portfolio-pastel-pink/20', textColor: 'text-portfolio-pastel-pink' },
+    { name: 'Development Tools', icon: <Code size={24} />, color: 'bg-portfolio-pastel-purple/20', textColor: 'text-portfolio-pastel-purple' },
+    { name: 'Design Software', icon: <Brush size={24} />, color: 'bg-portfolio-pastel-green/20', textColor: 'text-portfolio-pastel-green' },
   ];
 
   return (
@@ -83,7 +83,7 @@ export const Skills = () => {
                 <div className="w-3 h-3 bg-red-500 rounded-full mr-2"></div>
                 <div className="w-3 h-3 bg-yellow-500 rounded-full mr-2"></div>
                 <div className="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
-                <span className="ml-2">python-skills.py</span>
+                <span className="ml-2">portfolio.py</span>
               </div>
               <div>
                 <span className="text-purple-400">def</span> <span className="text-blue-400">create_portfolio</span><span className="text-yellow-400">(</span><span className="text-orange-400">skills</span><span className="text-yellow-400">):</span>
@@ -96,51 +96,53 @@ export const Skills = () => {
           
           {/* Software & Tools */}
           <div className={`${inView ? 'animate-fadeInUp animate-delay-200' : 'opacity-0'}`}>
-            <h3 className="subtitle mb-6">Software & Tools</h3>
+            <h3 className="subtitle mb-6">Programming Languages and Frameworks</h3>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {softwareSkills.map((skill, index) => (
-                <div 
-                  key={index}
-                  className="card p-6 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
-                  style={{animationDelay: `${index * 100 + 300}ms`}}
-                >
-                  <div className={`w-16 h-16 rounded-full ${skill.color} flex items-center justify-center mx-auto mb-4`}>
-                    <span className={skill.textColor}>{skill.icon}</span>
-                  </div>
-                  <h4 className="font-medium">{skill.name}</h4>
+              <div className="card p-5 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <h4 className="font-medium mb-3">Programming Languages</h4>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-portfolio-pastel-blue/20 text-portfolio-pastel-blue rounded-full text-sm">Python</span>
+                  <span className="px-3 py-1 bg-portfolio-pastel-pink/20 text-portfolio-pastel-pink rounded-full text-sm">React with TypeScript</span>
+                  <span className="px-3 py-1 bg-portfolio-pastel-purple/20 text-portfolio-pastel-purple rounded-full text-sm">Tailwind CSS</span>
+                  <span className="px-3 py-1 bg-portfolio-pastel-green/20 text-portfolio-pastel-green rounded-full text-sm">HTML5, CSS, JS</span>
+                  <span className="px-3 py-1 bg-portfolio-pastel-blue/20 text-portfolio-pastel-blue rounded-full text-sm">Jupyter Notebook</span>
+                  <span className="px-3 py-1 bg-portfolio-pastel-purple/20 text-portfolio-pastel-purple rounded-full text-sm">Git</span>
                 </div>
-              ))}
+              </div>
+              
+              <div className="card p-5 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <h4 className="font-medium mb-3">Tools and 3D Software</h4>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-portfolio-pastel-blue/20 text-portfolio-pastel-blue rounded-full text-sm">Blender</span>
+                  <span className="px-3 py-1 bg-portfolio-pastel-pink/20 text-portfolio-pastel-pink rounded-full text-sm">Cinema4D × Octane</span>
+                  <span className="px-3 py-1 bg-portfolio-pastel-purple/20 text-portfolio-pastel-purple rounded-full text-sm">Unreal Engine</span>
+                  <span className="px-3 py-1 bg-portfolio-pastel-green/20 text-portfolio-pastel-green rounded-full text-sm">Embergen</span>
+                  <span className="px-3 py-1 bg-portfolio-pastel-red/20 text-portfolio-pastel-red rounded-full text-sm">Adobe Suite</span>
+                </div>
+              </div>
             </div>
             
-            {/* Skill cloud */}
-            <div className={`mt-8 bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md border border-gray-100 ${inView ? 'animate-fadeIn animate-delay-500' : 'opacity-0'}`}>
-              <h3 className="text-lg font-medium mb-4">Experience Level</h3>
+            {/* Projects section */}
+            <div className="mt-8 bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md border border-gray-100">
+              <h3 className="text-lg font-medium mb-4">Current Projects</h3>
               
-              <div className="flex flex-wrap gap-2">
-                {[
-                  { name: 'Python', level: 'Expert', color: 'bg-portfolio-pastel-blue/20 text-portfolio-pastel-blue' },
-                  { name: 'AI Development', level: 'Advanced', color: 'bg-portfolio-pastel-pink/20 text-portfolio-pastel-pink' },
-                  { name: '3D Modeling', level: 'Expert', color: 'bg-portfolio-pastel-purple/20 text-portfolio-pastel-purple' },
-                  { name: 'UI Development', level: 'Intermediate', color: 'bg-portfolio-pastel-green/20 text-portfolio-pastel-green' },
-                  { name: 'VFX', level: 'Expert', color: 'bg-portfolio-pastel-red/20 text-portfolio-pastel-red' },
-                  { name: 'Creative Design', level: 'Advanced', color: 'bg-portfolio-pastel-cream/20 text-gray-700' },
-                ].map((item, index) => (
-                  <div 
-                    key={index} 
-                    className={`px-3 py-1.5 rounded-full ${item.color} text-sm font-medium flex items-center`}
-                    style={{
-                      animationDelay: `${index * 100 + 600}ms`,
-                      transform: inView ? 'scale(1)' : 'scale(0)'
-                    }}
-                  >
-                    {item.name}
-                    <span className="ml-1.5 px-1.5 py-0.5 bg-white/50 rounded-full text-xs">
-                      {item.level}
-                    </span>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <span className="w-2 h-2 mt-2 rounded-full bg-portfolio-pastel-blue mr-2"></span>
+                  <div>
+                    <a href="https://ren3der.vercel.app" className="font-medium text-portfolio-pastel-pink hover:underline">Ren3Der</a>
+                    <p className="text-sm text-gray-600">3D Quotation Calculator</p>
                   </div>
-                ))}
-              </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 mt-2 rounded-full bg-portfolio-pastel-pink mr-2"></span>
+                  <div>
+                    <a href="https://github.com/sms03/SharkSenz" className="font-medium text-portfolio-pastel-blue hover:underline">StarsSenz</a>
+                    <p className="text-sm text-gray-600">Wanna learn and build an effective startup? Try SharkSenz to learn more.</p>
+                  </div>
+                </li>
+              </ul>
             </div>
             
             {/* Languages */}

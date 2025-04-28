@@ -13,7 +13,7 @@ export const Education = () => {
       degree: "Bachelor's in Computer Application",
       institution: "Pratibha College of Commerce and Computer Studies",
       period: "July 2022 - June 2025",
-      gpa: "SGPA - 9.045 (Avg. of 3rd and 4th Sem, 2nd Year)",
+      gpa: "Avg. SGPA - 9.045",
       icon: <GraduationCap size={24} />,
       color: "bg-portfolio-pastel-pink",
       delay: 200
@@ -30,24 +30,29 @@ export const Education = () => {
 
   const certifications = [
     {
-      title: "Google Certified Digital Marketing Expert (DME)",
+      title: "Prompt Engineering & Gen AI",
       icon: <Award size={20} />,
       color: "bg-portfolio-pastel-blue/20"
     },
     {
-      title: "Radio Jockey (RJ)",
+      title: "Google Certified Digital Marketing Expert (DME)",
       icon: <Award size={20} />,
       color: "bg-portfolio-pastel-pink/20"
     },
     {
-      title: "Script Writing Course",
+      title: "Radio Jockey (RJ)",
       icon: <Award size={20} />,
       color: "bg-portfolio-pastel-purple/20"
     },
     {
-      title: "Photography and Videography Certification",
+      title: "Script Writing Course",
       icon: <Award size={20} />,
       color: "bg-portfolio-pastel-green/20"
+    },
+    {
+      title: "Photography and Videography Certification",
+      icon: <Award size={20} />,
+      color: "bg-portfolio-pastel-blue/20"
     }
   ];
 
@@ -139,10 +144,13 @@ export const Education = () => {
                     <div className="flex items-start">
                       <Code size={18} className="text-portfolio-pastel-red-dark mr-3 mt-1" />
                       <div>
-                        <h4 className="font-medium">AI Fashion Advisor</h4>
+                        <h4 className="font-medium">AI Agents with Google's A2A</h4>
                         <p className="text-sm text-gray-600 mt-1">
-                          Built an AI Fashion Advisor using React and Python etc.
+                          Currently building AI Agents with Google's A2A with ADK and MCP servers
                         </p>
+                        <div className="mt-2">
+                          <a href="https://github.com/sms03/StarsSense" className="text-xs text-portfolio-pastel-blue hover:underline">https://github.com/sms03/StarsSense</a>
+                        </div>
                       </div>
                     </div>
                   </div>

@@ -28,7 +28,7 @@ export const About = () => {
                     <User size={48} className="mx-auto mb-4 text-portfolio-pastel-pink" />
                     <h3 className="text-xl font-semibold mb-2">Professional Summary</h3>
                     <p className="text-gray-700 mb-6">
-                      Passionate self-taught CG & VFX artist with expertise in creative designs and technical implementations.
+                      Highly skilled CGI and VFX Artist with additional expertise as an AI Developer, Prompt Engineer, and Web App Developer.
                     </p>
                     <div className="flex justify-center space-x-4">
                       <a 
@@ -97,10 +97,10 @@ export const About = () => {
             <div className={`mb-6 ${inView ? 'animate-fadeIn animate-delay-200' : 'opacity-0'}`}>
               <h3 className="subtitle">Who Am I?</h3>
               <p className="text-content mb-4">
-                I am a passionate self-taught CG & VFX artist specializing in creating weird, futuristic, surreal, and abstract art. I'm skilled in transforming unique concepts into stunning visuals to ensure client satisfaction.
+                Highly skilled CGI and VFX Artist with additional expertise as an AI Developer, Prompt Engineer, and Web App Developer. Adept at combining cutting-edge technology with creative artistry to produce innovative solutions in digital media, web applications, and AI-driven projects.
               </p>
               <p className="text-content mb-4">
-                Eager to tackle challenges and continuously expand my artistic and programming expertise. Driven to succeed as a knowledgeable and innovative creator.
+                With experience working with international clients and brands, I blend technical skills with creative vision to deliver exceptional results across various digital platforms.
               </p>
             </div>
             
@@ -113,7 +113,7 @@ export const About = () => {
                 </li>
                 <li className="flex items-start">
                   <CheckCircle2 size={20} className="text-portfolio-pastel-pink mr-2 mt-1 flex-shrink-0" />
-                  <span className="text-gray-700">Utilizing math-based 3D modeling for innovative designs</span>
+                  <span className="text-gray-700">Utilizing advanced 3D modeling techniques for innovative designs</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle2 size={20} className="text-portfolio-pastel-pink mr-2 mt-1 flex-shrink-0" />
