@@ -10,6 +10,7 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { ScrollToTop } from './components/ScrollToTop';
 import { CustomCursor } from './components/CustomCursor';
+import ParticleBackground from './components/ParticleBackground';
 
 function App() {
   // Add debugging to check if App is mounting
@@ -20,6 +21,7 @@ function App() {
   return (
     <div className="app geist-mono-regular cursor-none">
       <CustomCursor />
+      <ParticleBackground />
       <ScrollToTop />
       {/* Wrap components in error boundaries for better debugging */}
       <ErrorBoundary fallback={<div className="p-4">Navbar error</div>}>
