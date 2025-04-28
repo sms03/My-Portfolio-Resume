@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useInView } from '../hooks/react-intersection-observer';
-import { Code, ArrowRight, Calendar, Briefcase, ExternalLink, Github } from 'lucide-react';
+import { Code, ArrowRight, Calendar, Briefcase, ExternalLink, Github, Clock, Sparkles } from 'lucide-react';
 
 console.log('Projects component file loaded');
 
@@ -53,13 +53,13 @@ const artistWork = [
   }
 ];
 
+// Completed projects
 const projects = [
   {
     id: 1,
     title: 'Ren3Der',
     description: '3D Quotation Calculator',
     technologies: ['React', 'Typescript'],
-    inProgress: true,
     color: 'from-portfolio-pastel-blue to-portfolio-pastel-purple',
     icon: <Code size={20} />,
     link: 'https://ren3der.vercel.app'
@@ -69,10 +69,37 @@ const projects = [
     title: 'SharkSenz',
     description: 'Wanna learn and build an effective startup? Try SharkSenz to learn more.',
     technologies: ['React', 'Typescript', 'Three.js', 'JavaScript', 'WebGL'],
-    inProgress: true,
     color: 'from-portfolio-pastel-pink to-portfolio-pastel-red',
     icon: <Briefcase size={20} />,
     link: 'https://github.com/sms03/SharkSenz'
+  }
+];
+
+// In progress projects
+const inProgressProjects = [
+  {
+    id: 1,
+    title: 'AI Agents with Google A2A',
+    description: 'Building advanced conversational AI agents using Google\'s A2A technology with ADK and MCP servers.',
+    technologies: ['Python', 'Google ADK', 'Pydantic', 'MCP'],
+    completion: 65,
+    startDate: 'April 2025',
+    estimatedCompletion: 'July 2025',
+    color: 'from-portfolio-pastel-green to-portfolio-pastel-blue',
+    icon: <Sparkles size={20} />,
+    link: 'https://github.com/sms03/Agent2Agent'
+  },
+  {
+    id: 2,
+    title: 'Portfolio Enhancement',
+    description: 'Adding new features and improving design of my personal portfolio website.',
+    technologies: ['React', 'TypeScript', 'Tailwind CSS'],
+    completion: 50,
+    startDate: 'April 2025',
+    estimatedCompletion: 'May 2025',
+    color: 'from-portfolio-pastel-blue to-portfolio-pastel-pink',
+    icon: <Code size={20} />,
+    link: 'https://github.com/sms03/My-Portfolio-Resume'
   }
 ];
 
@@ -105,8 +132,101 @@ export const Projects = () => {
           
           <div ref={sectionRef} className="section-container relative z-10">
             <h2 className="section-title">
-              Work Experience & Projects
+            Projects & Work Experience
             </h2>
+            
+            {/* In Progress Projects section - NEW SECTION */}
+            <div className="mb-20">
+              <div className="flex items-center mb-8">
+                <div className="w-10 h-10 rounded-full bg-portfolio-pastel-green flex items-center justify-center mr-3">
+                  <Clock size={20} className="text-white" />
+                </div>
+                <h3 className="text-xl font-semibold">In Progress Projects</h3>
+              </div>
+              
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                {inProgressProjects.map((project, index) => (
+                  <div 
+                    key={project.id} 
+                    className={`card p-6 group relative overflow-hidden border-l-4 border-portfolio-pastel-green scale-in`}
+                    style={{ animationDelay: `${index * 200}ms` }}
+                  >
+                    {/* Project badge */}
+                    <div className="absolute top-4 right-4 flex items-center">
+                      <span className="px-3 py-1 text-xs font-medium bg-portfolio-pastel-green/20 text-portfolio-pastel-green rounded-full flex items-center">
+                        <Clock size={14} className="mr-1" /> In Progress
+                      </span>
+                    </div>
+                    
+                    <div className="flex items-start">
+                      {/* Icon */}
+                      <div className={`w-12 h-12 rounded-full bg-gradient-to-br ${project.color} flex items-center justify-center text-white mr-4 flex-shrink-0`}>
+                        {project.icon}
+                      </div>
+                      
+                      <div className="flex-grow">
+                        {/* Title */}
+                        <h3 className="text-lg font-semibold mb-1 group-hover:text-portfolio-pastel-green transition-colors pr-24">
+                          {project.title}
+                        </h3>
+                        
+                        {/* Timeline */}
+                        <div className="flex items-center text-xs text-gray-500 mb-3">
+                          <Calendar size={14} className="mr-1" />
+                          <span>{project.startDate} - Est. completion: {project.estimatedCompletion}</span>
+                        </div>
+                        
+                        {/* Description */}
+                        <p className="text-sm text-gray-600 mb-4">
+                          {project.description}
+                        </p>
+                        
+                        {/* Progress bar */}
+                        <div className="mb-3">
+                          <div className="flex justify-between text-xs text-gray-500 mb-1">
+                            <span>Progress</span>
+                            <span>{project.completion}%</span>
+                          </div>
+                          <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
+                            <div 
+                              className="h-full rounded-full bg-gradient-to-r from-portfolio-pastel-green to-portfolio-pastel-blue"
+                              style={{ width: `${project.completion}%` }}
+                            ></div>
+                          </div>
+                        </div>
+                        
+                        {/* Technologies */}
+                        <div className="flex flex-wrap gap-2 mb-4">
+                          {project.technologies.map((tech, i) => (
+                            <span 
+                              key={i} 
+                              className="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-600"
+                            >
+                              {tech}
+                            </span>
+                          ))}
+                        </div>
+                        
+                        {/* Links */}
+                        <div className="flex items-center space-x-3">
+                          <a 
+                            href={project.link} 
+                            className="text-portfolio-pastel-green hover:underline text-sm font-medium flex items-center"
+                          >
+                            View Project <ArrowRight size={14} className="ml-1" />
+                          </a>
+                          {project.link !== '#' && (
+                            <a href={project.link} className="p-1.5 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors">
+                              <Github size={14} />
+                            </a>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
             
             {/* Brand Work Experience section */}
             <div className="mb-16">
@@ -202,13 +322,13 @@ export const Projects = () => {
               </div>
             </div>
             
-            {/* Projects section */}
+            {/* Completed Projects section */}
             <div>
               <div className="flex items-center mb-8">
-                <div className="w-10 h-10 rounded-full bg-portfolio-pastel-green flex items-center justify-center mr-3">
+                <div className="w-10 h-10 rounded-full bg-portfolio-pastel-blue flex items-center justify-center mr-3">
                   <Code size={20} className="text-white" />
                 </div>
-                <h3 className="text-xl font-semibold">Recent Projects</h3>
+                <h3 className="text-xl font-semibold">Completed Projects</h3>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -218,13 +338,11 @@ export const Projects = () => {
                     className={`card p-6 group relative overflow-hidden border-t-4 border-portfolio-pastel-blue scale-in`}
                     style={{ animationDelay: `${index * 200 + 600}ms` }}
                   >
-                    {project.inProgress && (
-                      <div className="absolute top-3 right-3 flex items-center">
-                        <span className="px-2 py-0.5 text-xs font-medium bg-portfolio-pastel-green/20 text-portfolio-pastel-green rounded-full">
-                          Completed
-                        </span>
-                      </div>
-                    )}
+                    <div className="absolute top-3 right-3 flex items-center">
+                      <span className="px-2 py-0.5 text-xs font-medium bg-portfolio-pastel-blue/20 text-portfolio-pastel-blue rounded-full">
+                        Completed
+                      </span>
+                    </div>
                     
                     <div className={`w-10 h-10 rounded-full bg-gradient-to-br ${project.color} flex items-center justify-center text-white mb-4`}>
                       {project.icon}
