@@ -34,5 +34,6 @@ public/ – Static assets (favicon, robots.txt, etc.)
 
 1. **Install dependencies:**
    ```sh
-   npm install
+   npm install or
+   npm i
    ```
