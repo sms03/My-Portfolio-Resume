@@ -5,6 +5,25 @@
   position: relative;
 }
 
+/* Custom cursor styles */
+.cursor-none,
+.cursor-none * {
+  cursor: none !important;
+}
+
+/* Interactive element cursor indicators */
+.cursor-none a,
+.cursor-none button,
+.cursor-none [role="button"],
+.cursor-none input[type="submit"],
+.cursor-none input[type="button"],
+.cursor-none input[type="checkbox"],
+.cursor-none input[type="radio"],
+.cursor-none select,
+.cursor-none .clickable {
+  cursor: none !important;
+}
+
 /* Fix for blank page - ensure content is visible */
 #root {
   display: block;

@@ -114,7 +114,7 @@ export const Hero = () => {
               </div>
               <div>
                 <h3 className="font-medium mb-1">3D Designer</h3>
-                <p className="text-sm text-gray-600">Motion Graphics</p>
+                <p className="text-sm text-gray-600">CGi & VFX, Motion Graphics</p>
               </div>
             </div>
             

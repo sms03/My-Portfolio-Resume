@@ -124,26 +124,28 @@ export const Skills = () => {
             </div>
             
             {/* Projects section */}
+            {/* 
             <div className="mt-8 bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md border border-gray-100">
               <h3 className="text-lg font-medium mb-4">Current Projects</h3>
               
               <ul className="space-y-3">
-                <li className="flex items-start">
-                  <span className="w-2 h-2 mt-2 rounded-full bg-portfolio-pastel-blue mr-2"></span>
-                  <div>
-                    <a href="https://ren3der.vercel.app" className="font-medium text-portfolio-pastel-pink hover:underline">Ren3Der</a>
-                    <p className="text-sm text-gray-600">3D Quotation Calculator</p>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 mt-2 rounded-full bg-portfolio-pastel-pink mr-2"></span>
-                  <div>
-                    <a href="https://github.com/sms03/SharkSenz" className="font-medium text-portfolio-pastel-blue hover:underline">StarsSenz</a>
-                    <p className="text-sm text-gray-600">Wanna learn and build an effective startup? Try SharkSenz to learn more.</p>
-                  </div>
-                </li>
+              <li className="flex items-start">
+                <span className="w-2 h-2 mt-2 rounded-full bg-portfolio-pastel-blue mr-2"></span>
+                <div>
+                <a href="https://ren3der.vercel.app" className="font-medium text-portfolio-pastel-pink hover:underline">Ren3Der</a>
+                <p className="text-sm text-gray-600">3D Quotation Calculator</p>
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="w-2 h-2 mt-2 rounded-full bg-portfolio-pastel-pink mr-2"></span>
+                <div>
+                <a href="https://github.com/sms03/SharkSenz" className="font-medium text-portfolio-pastel-blue hover:underline">StarsSenz</a>
+                <p className="text-sm text-gray-600">Wanna learn and build an effective startup? Try SharkSenz to learn more.</p>
+                </div>
+              </li>
               </ul>
             </div>
+            */}
             
             {/* Languages */}
             <div className={`mt-8 bg-gradient-to-r from-portfolio-pastel-blue/20 to-portfolio-pastel-purple/20 p-6 rounded-lg ${inView ? 'animate-fadeIn animate-delay-700' : 'opacity-0'}`}>
