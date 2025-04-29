@@ -71,10 +71,12 @@ export const Contact = () => {
                   <Mail size={20} className="text-portfolio-pastel-pink" />
                 </div>
                 <div>
+                <div className="break-all">
                   <h4 className="font-medium mb-1">Email</h4>
-                  <a href="mailto:shivamsal2000@gmail.com" className="text-portfolio-pastel-blue hover:underline">
+                  <a href="mailto:shivamsal2000@gmail.com" className="text-portfolio-pastel-blue hover:underline brake-all">
                     shivamsal2000@gmail.com
                   </a>
+                  </div>
                 </div>
               </div>
               
