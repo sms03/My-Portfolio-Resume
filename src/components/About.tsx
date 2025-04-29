@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
-import { CheckCircle2, User, Award, Code } from 'lucide-react';
+import { CheckCircle2, User } from 'lucide-react';
 
 export const About = () => {
   const { ref: sectionRef, inView } = useInView({
@@ -12,12 +12,8 @@ export const About = () => {
     <section id="about" className="py-20 relative overflow-hidden">
       {/* Background elements */}
       <div className="animated-bg animated-circle circle-4"></div>
-      
       <div ref={sectionRef} className="section-container relative z-10">
-        <h2 className={`section-title ${inView ? 'animate-fadeIn' : 'opacity-0'}`}>
-          About Me
-        </h2>
-        
+        <h2 className={`section-title ${inView ? 'animate-fadeIn' : 'opacity-0'}`}>About Me</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* Left side - Image and info box */}
           <div className={`relative ${inView ? 'animate-slideInLeft' : 'opacity-0'}`}>
@@ -27,8 +23,8 @@ export const About = () => {
                   <div className="text-center p-8">
                     <User size={48} className="mx-auto mb-4 text-portfolio-pastel-pink" />
                     <h3 className="text-xl font-semibold mb-2">Professional Summary</h3>
-                    <p className="text-gray-700 mb-6">
-                      Highly skilled CGI and VFX Artist with additional expertise as an AI Developer, Prompt Engineer, and Web App Developer.
+                    <p className="text-gray-700 mb-6 text-base sm:text-sm md:text-base lg:text-lg leading-relaxed">
+                    Design meets code — expert in 3D, motion graphics, and AI development with strong prompt engineering skills.
                     </p>
                     <div className="flex justify-center space-x-4">
                       <a 
@@ -55,55 +51,22 @@ export const About = () => {
                   </div>
                 </div>
               </div>
-              
               {/* Decorative elements */}
               <div className="absolute -top-4 -right-4 w-16 h-16 bg-portfolio-pastel-cream rounded-full opacity-60"></div>
               <div className="absolute -bottom-4 -left-4 w-10 h-10 bg-portfolio-pastel-blue rounded-full opacity-60"></div>
             </div>
-            
-            {/* Contact info card */}
-            <div className="bg-white shadow-lg rounded-lg p-6 mt-6 transform hover:-translate-y-1 transition-all">
-              <h3 className="text-lg font-semibold mb-4 flex items-center">
-                <span className="w-8 h-8 rounded-full bg-portfolio-pastel-purple/20 flex items-center justify-center mr-2">
-                  <Award size={16} className="text-portfolio-pastel-purple" />
-                </span>
-                Contact Information
-              </h3>
-              <ul className="space-y-2">
-                <li className="flex items-center text-sm">
-                  <span className="font-medium w-20">Email:</span>
-                  <a href="mailto:shivamsal2000@gmail.com" className="text-portfolio-pastel-blue hover:underline">
-                    shivamsal2000@gmail.com
-                  </a>
-                </li>
-                <li className="flex items-center text-sm">
-                  <span className="font-medium w-20">Behance:</span>
-                  <a href="https://behance.net/SMSXART" target="_blank" rel="noopener noreferrer" className="text-portfolio-pastel-blue hover:underline">
-                    behance.net/SMSXART
-                  </a>
-                </li>
-                <li className="flex items-center text-sm">
-                  <span className="font-medium w-20">GitHub:</span>
-                  <a href="https://github.com/sms03" target="_blank" rel="noopener noreferrer" className="text-portfolio-pastel-blue hover:underline">
-                    github.com/sms03
-                  </a>
-                </li>
-              </ul>
-            </div>
           </div>
-          
           {/* Right side - Text content */}
-          <div>
+          <div className="flex flex-col">
             <div className={`mb-6 ${inView ? 'animate-fadeIn animate-delay-200' : 'opacity-0'}`}>
               <h3 className="subtitle">Who Am I?</h3>
-              <p className="text-content mb-4">
+              <p className="text-content mb-4 text-base md:text-base lg:text-lg leading-relaxed">
                 Creative and technically skilled 3D CGI and VFX Artist, Motion Designer, and AI Developer with expertise in prompt engineering. BCA graduate with a strong foundation in computer applications, blending artistic vision with advanced technology to deliver high-impact visuals, animations, and AI-driven solutions.
               </p>
-              <p className="text-content mb-4">
+              <p className="text-content mb-4 text-base md:text-base lg:text-lg leading-relaxed">
                 With experience working with international clients and brands, I blend technical skills with creative vision to deliver exceptional results across various digital platforms.
               </p>
             </div>
-            
             <div className={`mb-6 ${inView ? 'animate-fadeIn animate-delay-300' : 'opacity-0'}`}>
               <h3 className="subtitle">My Approach</h3>
               <ul className="space-y-3">
@@ -125,25 +88,6 @@ export const About = () => {
                 </li>
               </ul>
             </div>
-            
-            {/*<div className={`${inView ? 'animate-fadeIn animate-delay-400' : 'opacity-0'}`}>
-              <h3 className="subtitle">Languages</h3>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-white/80 backdrop-blur-sm p-3 rounded-lg shadow-sm flex items-center">
-                  <div className="w-3 h-3 rounded-full bg-portfolio-pastel-pink mr-2"></div>
-                  <span>English (Fluent)</span>
-                </div>
-                <div className="bg-white/80 backdrop-blur-sm p-3 rounded-lg shadow-sm flex items-center">
-                  <div className="w-3 h-3 rounded-full bg-portfolio-pastel-blue mr-2"></div>
-                  <span>Hindi (Fluent)</span>
-                </div>
-                <div className="bg-white/80 backdrop-blur-sm p-3 rounded-lg shadow-sm flex items-center">
-                  <div className="w-3 h-3 rounded-full bg-portfolio-pastel-purple mr-2"></div>
-                  <span>Japanese (Proficient)</span>
-                </div>
-              </div>
-            </div> */}
-
           </div>
         </div>
       </div>
