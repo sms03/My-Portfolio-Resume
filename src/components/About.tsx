@@ -97,7 +97,7 @@ export const About = () => {
             <div className={`mb-6 ${inView ? 'animate-fadeIn animate-delay-200' : 'opacity-0'}`}>
               <h3 className="subtitle">Who Am I?</h3>
               <p className="text-content mb-4">
-                Highly skilled CGI and VFX Artist with additional expertise as an AI Developer, Prompt Engineer, and Web App Developer. Adept at combining cutting-edge technology with creative artistry to produce innovative solutions in digital media, web applications, and AI-driven projects.
+                Creative and technically skilled 3D CGI and VFX Artist, Motion Designer, and AI Developer with expertise in prompt engineering. BCA graduate with a strong foundation in computer applications, blending artistic vision with advanced technology to deliver high-impact visuals, animations, and AI-driven solutions.
               </p>
               <p className="text-content mb-4">
                 With experience working with international clients and brands, I blend technical skills with creative vision to deliver exceptional results across various digital platforms.
