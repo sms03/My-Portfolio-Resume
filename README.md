@@ -2,6 +2,8 @@
 
 A personal portfolio and resume website for Shivam M. Salunkhe, showcasing 3D motion graphics design, CGI & VFX artistry, AI development, and web development projects.
 
+![Portfolio Banner](public/hero_ss.png)
+
 ## Live Demo
 
 [View Portfolio Website](https://smsx.netlify.app/) <!-- Update with your actual portfolio link when available -->
