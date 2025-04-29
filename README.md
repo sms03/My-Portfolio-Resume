@@ -4,23 +4,22 @@ A personal portfolio and resume website for Shivam M. Salunkhe, showcasing 3D mo
 
 ## Live Demo
 
-[View Portfolio Website](https://link)
+[View Portfolio Website](https://link) <!-- Update with your actual portfolio link when available -->
 
 ## Features
 
 - Modern, responsive design with custom animations
 - Interactive sections with smooth scroll navigation
+- Particle background effect for enhanced visual appeal
 - Custom cursor with interactive animations
-- In-progress projects section with completion indicators
-- Work experience timeline and brand showcases
-- 3D artist portfolio with client work display
+- Projects showcase with detailed information
+- Work experience timeline and education history
 - Skills visualization with progress indicators
 - Contact form with email integration
-- Dark/light mode toggle (coming soon)
-- SEO-optimized content and metadata
 - Mobile and tablet responsive layouts
 - "Back to top" button for easy navigation
-- Custom UI components based on shadcn/ui
+- Custom UI components using shadcn/ui
+- Intersection Observer API for scroll animations
 
 ## Technologies Used
 
@@ -30,9 +29,13 @@ A personal portfolio and resume website for Shivam M. Salunkhe, showcasing 3D mo
 - [Vite](https://vitejs.dev/) – Fast build tool and development server
 - [Bun](https://bun.sh/) – JavaScript runtime and package manager
 - [shadcn/ui](https://ui.shadcn.com/) – Accessible React components
-- [lucide-react](https://lucide.dev/) – Icon library
+- [Radix UI](https://www.radix-ui.com/) – Headless UI component primitives
+- [lucide-react](https://lucide.dev/) – Beautiful & consistent icon set
 - [react-intersection-observer](https://www.npmjs.com/package/react-intersection-observer) – Viewport detection for animations
-- [Radix UI](https://www.radix-ui.com/) – Primitives for UI components
+- [react-tsparticles](https://particles.js.org/) – Particle background effects
+- [React Router](https://reactrouter.com/) – Client-side routing
+- [React Hook Form](https://react-hook-form.com/) – Form validation
+- [Zod](https://zod.dev/) – TypeScript-first schema validation
 
 ## Project Structure
 
@@ -46,102 +49,84 @@ src/
   │   ├── Education.tsx        # Education and certifications section
   │   ├── Footer.tsx           # Page footer with links and credits
   │   ├── Hero.tsx             # Hero/landing section
-  │   ├── Navbar.tsx           # Navigation with horizontal and vertical variants
-  │   ├── Projects.tsx         # Projects and work experience sections
-  │   ├── ScrollToTop.tsx      # Back-to-top button component
-  │   └── Skills.tsx           # Skills and expertise section
+  │   ├── Navbar.tsx           # Navigation component
+  │   ├── ParticleBackground.tsx # Background particle animation
+  │   ├── Projects.tsx         # Projects showcase section
+  │   ├── ScrollToTop.tsx      # Button to scroll back to top
+  │   └── Skills.tsx           # Skills and technologies section
   ├── hooks/                   # Custom React hooks
-  │   ├── react-intersection-observer.tsx  # Scroll animation detection
+  │   ├── react-intersection-observer.tsx # Enhanced intersection observer
   │   ├── use-mobile.tsx       # Mobile device detection
-  │   ├── use-toast.ts         # Toast notification hook
-  │   └── useScrollAnimation.tsx # Custom scroll animations
+  │   ├── use-toast.ts         # Toast notifications hook
+  │   └── useScrollAnimation.tsx # Animation on scroll functionality
   ├── lib/                     # Utility functions
   │   └── utils.ts             # Common utility functions
   ├── pages/                   # Page components
   │   ├── Index.tsx            # Main landing page
-  │   └── NotFound.tsx         # 404 error page
-  ├── App.css                  # Global CSS styles
+  │   └── NotFound.tsx         # 404 page
   ├── App.tsx                  # Main application component
+  ├── App.css                  # Global styles
   ├── index.css                # CSS entry point
-  └── main.tsx                 # Application entry point
+  ├── main.tsx                 # Application entry point
+  └── vite-env.d.ts           # Vite type definitions
 ```
 
 ## Getting Started
 
 ### Prerequisites
-- [Node.js](https://nodejs.org/) (v18 or higher)
-- [Bun](https://bun.sh/) or npm
+
+- Node.js (v18+) or Bun (latest)
+- Git
 
 ### Installation
 
-1. **Clone the repository:**
-   ```sh
-   git clone https://github.com/sms03/My-Portfolio-Resume.git
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/My-Portfolio-Resume.git
    cd My-Portfolio-Resume
    ```
 
-2. **Install dependencies:**
-   ```sh
-   bun install
-   # OR
+2. Install dependencies:
+   ```bash
+   # Using npm
    npm install
+   # Or using Bun
+   bun install
    ```
 
-3. **Start the development server:**
-   ```sh
-   bun run dev
-   # OR
+3. Start the development server:
+   ```bash
+   # Using npm
    npm run dev
+   # Or using Bun
+   bun run dev
    ```
 
-4. **Open your browser:**
-   ```
-   http://localhost:5173
-   ```
+4. Open your browser to `http://localhost:5173` to view the application.
 
-## Building for Production
+### Building for Production
 
-```sh
-bun run build
-# OR
+```bash
+# Using npm
 npm run build
+# Or using Bun
+bun run build
 ```
-
-The build artifacts will be stored in the `dist/` directory.
-
-## Customization
-
-### Changing Content
-
-Most content is defined directly in the component files. To update your information:
-
-- **Personal Info**: Edit the `About.tsx` and `Hero.tsx` components
-- **Work Experience**: Update the arrays in `Projects.tsx`
-- **Skills**: Modify the skills arrays in `Skills.tsx`
-- **Education**: Update the education information in `Education.tsx`
-- **Contact**: Change contact details in `Contact.tsx`
-
-### Styling
-
-The project uses Tailwind CSS for styling. Custom colors and themes are defined in:
-
-- `tailwind.config.ts` - Theme configuration
-- `App.css` - Global styles and animations
 
 ## Deployment
 
-This portfolio site can be deployed to any static site hosting service:
-
+The project can be deployed to any static site hosting service, such as:
 - [Vercel](https://vercel.com/)
 - [Netlify](https://www.netlify.com/)
 - [GitHub Pages](https://pages.github.com/)
 
+## Customization
+
+- Update personal information in the respective component files
+- Modify theme colors in `tailwind.config.ts`
+- Add your projects in the `Projects.tsx` component
+- Customize skills and education details in their respective components
+
 ## License
 
-[MIT](LICENSE)
-
-## Acknowledgments
-
-- Icons: [Lucide Icons](https://lucide.dev/)
-- UI Components: [shadcn/ui](https://ui.shadcn.com/)
-- Fonts: [Geist Mono](https://vercel.com/font)
+This project is open source and available under the [MIT License](LICENSE).
