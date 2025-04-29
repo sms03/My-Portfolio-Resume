@@ -157,30 +157,25 @@ export const Projects = () => {
                         <Clock size={14} className="mr-1" /> In Progress
                       </span>
                     </div>
-                    
-                    <div className="flex items-start">
+                    <div className="flex items-start flex-col sm:flex-row">
                       {/* Icon */}
-                      <div className={`w-12 h-12 rounded-full bg-gradient-to-br ${project.color} flex items-center justify-center text-white mr-4 flex-shrink-0`}>
+                      <div className={`w-12 h-12 rounded-full bg-gradient-to-br ${project.color} flex items-center justify-center text-white mr-0 sm:mr-4 mb-4 sm:mb-0 flex-shrink-0`}>
                         {project.icon}
                       </div>
-                      
-                      <div className="flex-grow">
+                      <div className="flex-grow w-full">
                         {/* Title */}
-                        <h3 className="text-lg font-semibold mb-1 group-hover:text-portfolio-pastel-green transition-colors pr-24">
+                        <h3 className="text-lg font-semibold mb-1 group-hover:text-portfolio-pastel-green transition-colors pr-0 sm:pr-24 break-words">
                           {project.title}
                         </h3>
-                        
                         {/* Timeline */}
-                        <div className="flex items-center text-xs text-gray-500 mb-3">
+                        <div className="flex flex-wrap items-center text-xs text-gray-500 mb-3">
                           <Calendar size={14} className="mr-1" />
                           <span>{project.startDate} - Est. completion: {project.estimatedCompletion}</span>
                         </div>
-                        
                         {/* Description */}
-                        <p className="text-sm text-gray-600 mb-4">
+                        <p className="text-sm text-gray-600 mb-4 break-words">
                           {project.description}
                         </p>
-                        
                         {/* Progress bar */}
                         <div className="mb-3">
                           <div className="flex justify-between text-xs text-gray-500 mb-1">
@@ -194,24 +189,22 @@ export const Projects = () => {
                             ></div>
                           </div>
                         </div>
-                        
                         {/* Technologies */}
                         <div className="flex flex-wrap gap-2 mb-4">
                           {project.technologies.map((tech, i) => (
                             <span 
                               key={i} 
-                              className="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-600"
+                              className="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-600 break-all"
                             >
                               {tech}
                             </span>
                           ))}
                         </div>
-                        
                         {/* Links */}
-                        <div className="flex items-center space-x-3">
+                        <div className="flex flex-wrap items-center space-x-3">
                           <a 
                             href={project.link} 
-                            className="text-portfolio-pastel-green hover:underline text-sm font-medium flex items-center"
+                            className="text-portfolio-pastel-green hover:underline text-sm font-medium flex items-center break-all"
                           >
                             View Project <ArrowRight size={14} className="ml-1" />
                           </a>
