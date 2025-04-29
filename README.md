@@ -4,7 +4,7 @@ A personal portfolio and resume website for Shivam M. Salunkhe, showcasing 3D mo
 
 ## Live Demo
 
-[View Portfolio Website](https://link) <!-- Update with your actual portfolio link when available -->
+[View Portfolio Website](https://smsx.netlify.app/) <!-- Update with your actual portfolio link when available -->
 
 ## Features
 
@@ -118,7 +118,6 @@ bun run build
 The project can be deployed to any static site hosting service, such as:
 - [Vercel](https://vercel.com/)
 - [Netlify](https://www.netlify.com/)
-- [GitHub Pages](https://pages.github.com/)
 
 ## Customization
 
