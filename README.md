@@ -7,9 +7,6 @@ A personal portfolio and resume website for Shivam M. Salunkhe, showcasing 3D mo
 <!-- Adjust width as needed (e.g., 500px) -->
 <!-- <img src="public/screenshot-1.png" alt="Home Page" width="500"/> -->
 
-## Live Demo
-
-[View Portfolio Website](https://smsx.netlify.app/) <!-- Update with your actual portfolio link when available -->
 
 ## Features
 
